@@ -1,0 +1,17 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "main": "sass/index.scss",
+  "repository": "https://github.com/lapvu/lab2.git",
+  "author": "lapvu <lapvv62@wru.vn>",
+  "license": "MIT",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/index.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0"
+  }
+}

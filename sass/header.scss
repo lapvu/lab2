@@ -1,0 +1,122 @@
+$white: rgb(255, 255, 255);
+$yellow: #f37221;
+$gray: rgb(194, 194, 194);
+.header {
+  background-color: rgb(16, 14, 27);
+  width: 100%;
+  height: auto;
+  background-image: url("../images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  .logo-text {
+    font-size: 35px;
+    font-family: "NunitoSans";
+    color: $white;
+    font-weight: bold;
+    &:hover {
+      color: $white;
+    }
+  }
+  .has-text {
+    font-size: 1rem;
+    font-family: "NunitoSans";
+    color: $gray;
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .navbar-end {
+    .navbar-item {
+      &::after {
+        content: "";
+        background: #a5a5a5;
+        position: absolute;
+        bottom: 38%;
+        right: 0;
+        height: 16%;
+        width: 1px;
+      }
+      &:last-child::after {
+        display: none;
+      }
+      a {
+        color: $white;
+        &:hover {
+          color: $yellow;
+        }
+      }
+      .dropdown {
+        .avatar {
+          padding: 20px;
+          border-radius: 50%;
+          background: $yellow;
+        }
+      }
+    }
+  }
+  .hero-body {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+    .title {
+      font-size: 65px;
+      font-family: "NunitoSans";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 1.154;
+      width: 50rem;
+    }
+    .subtitle {
+      font-size: 22px;
+      font-family: "NunitoSans";
+      color: rgb(216, 216, 216);
+      line-height: 1.364;
+    }
+    .search {
+      background: $white;
+      height: auto;
+      border-top-left-radius: 1.6rem;
+      border-bottom-left-radius: 1.6rem;
+      border-top-right-radius: 1.6rem;
+      border-bottom-right-radius: 1.6rem;
+      input {
+        padding: 1rem 1.3rem;
+        font-weight: bold;
+        margin: 0;
+        outline: none;
+        background: transparent;
+        border: none;
+      }
+      select {
+        padding: 1rem 1rem;
+        font-weight: bold;
+        margin: 0;
+        outline: none;
+        border: none;
+        background: transparent;
+        &::after {
+          color: $yellow;
+        }
+      }
+      button {
+        padding: 1.1rem 1.8rem;
+        margin: 0;
+        outline: none;
+        border: none;
+        background: $yellow;
+        border-top-right-radius: 1.6rem;
+        border-bottom-right-radius: 1.6rem;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.text-gray {
+  color: $gray !important;
+}
